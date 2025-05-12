@@ -17,10 +17,11 @@ def main():
 
     while True:
         screen.fill("black")
-        player.draw(screen)            
+        player.update(dt)
+        player.draw(screen)          
         pygame.display.flip()
 
-
+        # kill the program if the user closes the window
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
