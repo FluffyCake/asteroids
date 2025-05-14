@@ -40,7 +40,6 @@ def main():
                     print("Hit!")
                     asteroid.kill()
                     shot.kill()
-                    # break
 
         for sprite in drawable:
             sprite.draw(screen)
